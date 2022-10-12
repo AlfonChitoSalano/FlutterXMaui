@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "146202334228",
+    "project_id": "analyticsmaui",
+    "storage_bucket": "analyticsmaui.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146202334228:android:e2ed5d4c32367f348e0301",
+        "android_client_info": {
+          "package_name": "com.companyname.analyticsmaui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146202334228-npfnes18novio1gc39vvg08gjqhqe7q1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoRW_Cbk2LPfn0vtUE_tUFI1exaLoPxns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146202334228-npfnes18novio1gc39vvg08gjqhqe7q1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
