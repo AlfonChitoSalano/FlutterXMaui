@@ -26,9 +26,9 @@ public partial class MainPage : ContentPage
     {
         var dictionary = new Dictionary<string, string>
         {
-            {"Name", "Wilson Abad"},
+            {"Name", "Wilson Rey"},
             {"Phone", "55 555 555 555"},
-            {"Email", "abad@yahoo.com.ph"}
+            {"Email", "wilsonrey@yahoo.com.ph"}
         };
 
         _firebaseAnalyticsService.SendEvent(nameof(ButtonSendDictionaryDataClicked), dictionary);
