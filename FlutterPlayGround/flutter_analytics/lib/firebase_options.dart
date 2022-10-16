@@ -44,40 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC3t7m0Ux64Jl2vHo0vvE43beBodTp0Eao',
-    appId: '1:202719522068:web:cabfdab59b52772fa8e601',
-    messagingSenderId: '202719522068',
-    projectId: 'analyticsflutter-b6d33',
-    authDomain: 'analyticsflutter-b6d33.firebaseapp.com',
-    storageBucket: 'analyticsflutter-b6d33.appspot.com',
-    measurementId: 'G-B4H75TK4ZV',
+    apiKey: 'xxxxxx',
+    appId: 'xxxxxx',
+    messagingSenderId: 'xxxxxx',
+    projectId: 'axxxxxx',
+    authDomain: 'xxxxxx',
+    storageBucket: 'xxxxxx',
+    measurementId: 'xxxxxx',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB-eNW_XOL2x4kSIJDUiUPFn1M4r7ovgYM',
-    appId: '1:202719522068:android:e822a3f4e58f5e46a8e601',
-    messagingSenderId: '202719522068',
-    projectId: 'analyticsflutter-b6d33',
+    apiKey: 'xxxxxx',
+    appId: 'xxxxxx',
+    messagingSenderId: 'xxxxxx',
+    projectId: 'axxxxxx',
     storageBucket: 'analyticsflutter-b6d33.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyD_WLBLFpmrfiazOE6acag9rbIgBlpGsZU',
-    appId: '1:202719522068:ios:6ecca8fffd1faa39a8e601',
-    messagingSenderId: '202719522068',
-    projectId: 'analyticsflutter-b6d33',
+    apiKey: 'xxxxxx',
+    appId: 'xxxxxx',
+    messagingSenderId: 'xxxxxx',
+    projectId: 'axxxxxx',
     storageBucket: 'analyticsflutter-b6d33.appspot.com',
-    iosClientId: '202719522068-k1of400vuka6du6c8chnrqv48l4fvmht.apps.googleusercontent.com',
+    iosClientId: 'xxxxxx',
     iosBundleId: 'com.example.flutterAnalytics',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyD_WLBLFpmrfiazOE6acag9rbIgBlpGsZU',
-    appId: '1:202719522068:ios:6ecca8fffd1faa39a8e601',
-    messagingSenderId: '202719522068',
-    projectId: 'analyticsflutter-b6d33',
+    apiKey: 'xxxxxx',
+    appId: 'xxxxxx',
+    messagingSenderId: 'xxxxxx',
+    projectId: 'axxxxxx',
     storageBucket: 'analyticsflutter-b6d33.appspot.com',
-    iosClientId: '202719522068-k1of400vuka6du6c8chnrqv48l4fvmht.apps.googleusercontent.com',
+    iosClientId: 'xxxxx',
     iosBundleId: 'com.example.flutterAnalytics',
   );
 }
