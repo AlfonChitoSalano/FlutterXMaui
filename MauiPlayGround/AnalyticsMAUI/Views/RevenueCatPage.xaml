@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AnalyticsMAUI.Views.RevenueCatPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:models="clr-namespace:AnalyticsMAUI.Models"
+    xmlns:vm="clr-namespace:AnalyticsMAUI.ViewModels"
+    Title="RevenueCatPage"
+    x:DataType="{x:Type vm:RevenueCatPageViewModel}">
+    <Grid Padding="20" RowDefinitions="*, Auto">
+        <VerticalStackLayout Grid.Row="0" BindableLayout.ItemsSource="{Binding Products}">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate x:DataType="{x:Type models:SubscriptionProduct}">
+                    <Frame
+                        Margin="0,5"
+                        Padding="20,20,10,20"
+                        BackgroundColor="#1974D1"
+                        CornerRadius="10">
+                        <Grid RowDefinitions="Auto,*,Auto">
+                            <Label
+                                Grid.Row="0"
+                                FontSize="Medium"
+                                HorizontalOptions="StartAndExpand"
+                                Text="{Binding Title}"
+                                TextColor="White" />
+
+                            <Label
+                                Grid.Row="1"
+                                FontSize="Caption"
+                                Text="{Binding Description}"
+                                TextColor="White" />
+
+                            <HorizontalStackLayout
+                                Grid.Row="2"
+                                Margin="0,20,0,0"
+                                HorizontalOptions="End"
+                                Spacing="10"
+                                VerticalOptions="CenterAndExpand">
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="Subtitle"
+                                    HorizontalOptions="End"
+                                    Text="{Binding Price}"
+                                    TextColor="Yellow" />
+                                <Button
+                                    Padding="0"
+                                    BackgroundColor="LightBlue"
+                                    Command="{Binding PurchaseInAppProductsCommand, Source={RelativeSource AncestorType={x:Type vm:RevenueCatPageViewModel}}}"
+                                    CommandParameter="{Binding .}"
+                                    FontAttributes="Bold"
+                                    FontSize="Micro"
+                                    HeightRequest="30"
+                                    HorizontalOptions="End"
+                                    Text="Buy"
+                                    TextColor="Green"
+                                    VerticalOptions="Center"
+                                    WidthRequest="60" />
+                            </HorizontalStackLayout>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </VerticalStackLayout>
+
+        <Button
+            Grid.Row="1"
+            Command="{Binding GetInAppProductsCommand}"
+            HorizontalOptions="Center"
+            Text="Get Products" />
+    </Grid>
+</ContentPage>

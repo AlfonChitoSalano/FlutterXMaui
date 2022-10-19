@@ -59,6 +59,12 @@
 	  <PackageReference Include="Xamarin.GooglePlayServices.Base">
 	    <Version>118.1.0</Version>
 	  </PackageReference>
+	  <PackageReference Include="Xamarin.RevenueCat.Android.Core.Common">
+	    <Version>5.3.0.2</Version>
+	  </PackageReference>
+	  <PackageReference Include="Xamarin.RevenueCat.Android.Extensions">
+	    <Version>5.3.0.2</Version>
+	  </PackageReference>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -67,6 +73,21 @@
 
 	<ItemGroup>
 	  <GoogleServicesJson Include="Platforms\Android\google-services.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\AnalyticsPage.xaml.cs">
+	    <DependentUpon>AnalyticsPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\RevenueCatPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

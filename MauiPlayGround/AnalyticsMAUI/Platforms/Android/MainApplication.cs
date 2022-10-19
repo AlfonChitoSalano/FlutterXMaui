@@ -1,4 +1,5 @@
-﻿using Android.App;
+﻿using AnalyticsMAUI.Infra;
+using Android.App;
 using Android.Runtime;
 
 namespace AnalyticsMAUI;
@@ -11,5 +12,14 @@ public class MainApplication : MauiApplication
 	{
 	}
 
-	protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
+	protected override MauiApp CreateMauiApp()
+	{
+#if DEBUG
+        Com.Revenuecat.Purchases.Purchases.DebugLogsEnabled = true;
+#endif
+        Com.Revenuecat.Purchases.Purchases.Configure(this, AppConstants.RevenueCatKey);
+
+
+        return MauiProgram.CreateMauiApp();
+    }
 }

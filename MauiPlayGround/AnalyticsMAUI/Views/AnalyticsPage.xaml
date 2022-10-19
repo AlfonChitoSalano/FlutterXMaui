@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AnalyticsMAUI.Views.AnalyticsPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Analytics Page">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="40"
+            VerticalOptions="Center">
+            <Button
+                Clicked="ButtonSayHelloClicked"
+                HeightRequest="60"
+                Text="Send Hello" />
+
+            <Button
+                Clicked="ButtonSendCommentsClicked"
+                HeightRequest="60"
+                Text="Send Comments" />
+
+            <Button
+                Clicked="ButtonSendDictionaryDataClicked"
+                HeightRequest="60"
+                Text="Send Dictionary Data" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
