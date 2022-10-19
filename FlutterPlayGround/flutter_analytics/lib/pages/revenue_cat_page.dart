@@ -20,13 +20,12 @@ class _RevenueCatPageState extends State<RevenueCatPage> {
       const snackBar = SnackBar(
         content: Text('No products available'),
       );
-      // ignore: use_build_context_synchronously
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
     } else {
       final packages = offerings.current?.availablePackages;
 
       final products = packages!.map((e) {
-        return SubscriptionProudct(
+        return SubscriptionProduct(
           id: e.offeringIdentifier,
           price: e.storeProduct.priceString,
           title: e.storeProduct.title,

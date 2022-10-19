@@ -12,4 +12,6 @@ class AppConstants {
   static const homePageRoute = "/";
   static const analyticsPageRoute = "/analyticsPage";
   static const revenueCatPageRoute = "/revenueCatPage";
+  static const homePageInheritedRoute = "/homePageInherited";
+  static const blocPatternPageRoute = "/blocPatternPage";
 }

@@ -13,14 +13,24 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             mainButtons(
-              onPressed: () =>
-                  Navigator.of(context).pushNamed(AppConstants.analyticsPageRoute),
+              onPressed: () => Navigator.of(context)
+                  .pushNamed(AppConstants.analyticsPageRoute),
               'Navigate to Analytics',
             ),
             mainButtons(
-              onPressed: () =>
-                  Navigator.of(context).pushNamed(AppConstants.revenueCatPageRoute),
+              onPressed: () => Navigator.of(context)
+                  .pushNamed(AppConstants.revenueCatPageRoute),
               'Navigate to RevenueCat',
+            ),
+            mainButtons(
+              onPressed: () => Navigator.of(context)
+                  .pushNamed(AppConstants.homePageInheritedRoute),
+              'Navigate to Inherited Widget',
+            ),
+            mainButtons(
+              onPressed: () => Navigator.of(context)
+                  .pushNamed(AppConstants.blocPatternPageRoute),
+              'Navigate to Bloc Pattern',
             )
           ],
         ),

@@ -34,7 +34,10 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
                 onPressed: _sendComment,
                 'Send Comments',
               ),
-              mainButtons(onPressed: _sendDictionary, 'Send Dictionary'),
+              mainButtons(
+                onPressed: _sendDictionary,
+                'Send Dictionary',
+              ),
             ],
           ),
         ),
@@ -49,7 +52,6 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
     const snackBar = SnackBar(
       content: Text('Event ButtonSayHelloClicked sent'),
     );
-    // ignore: use_build_context_synchronously
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
@@ -63,7 +65,6 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
     const snackBar = SnackBar(
       content: Text('Event ButtonSendCommentsClicked sent'),
     );
-    // ignore: use_build_context_synchronously
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 
@@ -78,7 +79,6 @@ class _AnalyticsPageState extends State<AnalyticsPage> {
     const snackBar = SnackBar(
       content: Text('Event ButtonSendDictionaryDataClicked sent'),
     );
-    // ignore: use_build_context_synchronously
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
 }

@@ -30,43 +30,37 @@ class _PayWallPageState extends State<PayWallPage> {
               style: const TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16),
-            buildPackages(),
+            buildPackage(),
           ],
         ),
       ),
     );
   }
 
-  Widget buildPackages() => ListView.builder(
+  Widget buildPackage() => ListView.builder(
         shrinkWrap: true,
         primary: false,
         itemCount: widget.packages.length,
         itemBuilder: (context, index) {
           final package = widget.packages[index];
-
-          return buildPackage(context, package);
+          final product = package.storeProduct;
+          return Card(
+            color: Colors.black,
+            elevation: 0,
+            margin: const EdgeInsets.fromLTRB(2, 10, 2, 10),
+            clipBehavior: Clip.hardEdge,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: ListTile(
+              textColor: Colors.white,
+              contentPadding: const EdgeInsets.all(10),
+              title: Text(product.title),
+              subtitle: Text(product.description),
+              trailing: Text(product.priceString),
+              onTap: () => widget.onClickedPackage(package),
+            ),
+          );
         },
       );
-
-  Widget buildPackage(BuildContext context, Package package) {
-    final product = package.storeProduct;
-
-    return Card(
-      color: Colors.black,
-      elevation: 0,
-      margin: const EdgeInsets.fromLTRB(2, 10, 2, 10),
-      clipBehavior: Clip.hardEdge,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: ListTile(
-        textColor: Colors.white,
-        contentPadding: const EdgeInsets.all(10),
-        title: Text(product.title),
-        subtitle: Text(product.description),
-        trailing: Text(product.priceString),
-        onTap: () => widget.onClickedPackage(package),
-      ),
-    );
-  }
 }

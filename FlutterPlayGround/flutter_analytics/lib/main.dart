@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_analytics/firebase_options.dart';
+import 'package:flutter_analytics/infra/custom_widgets/state_container.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'app.dart';
 import 'infra/constants/app_constants.dart';
@@ -16,5 +17,5 @@ void main() async {
 
   await Purchases.configure(_configuration);
 
-  runApp(const MyMaterialApp());
+  runApp(new StateContainer(child: const MyMaterialApp()));
 }

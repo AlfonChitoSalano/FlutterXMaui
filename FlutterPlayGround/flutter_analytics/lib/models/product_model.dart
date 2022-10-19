@@ -1,6 +1,6 @@
 import 'dart:ffi';
 
-class SubscriptionProudct {
+class SubscriptionProduct {
   final String id;
   final String? platformId;
   final Long? microsPrice;
@@ -9,7 +9,7 @@ class SubscriptionProudct {
   final String price;
   final String description;
 
-  SubscriptionProudct({
+  SubscriptionProduct({
     required this.id,
     this.platformId,
     this.microsPrice,
