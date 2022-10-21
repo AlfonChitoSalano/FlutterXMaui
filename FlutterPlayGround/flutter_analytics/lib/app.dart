@@ -30,7 +30,7 @@ class MyMaterialApp extends StatelessWidget {
         AppConstants.revenueCatPageRoute: (context) => const RevenueCatPage(),
         AppConstants.homePageInheritedRoute: (context) =>
             const HomePageInherited(),
-        AppConstants.blocPatternPageRoute: (context) => const BlocPatternPage()
+        AppConstants.blocPatternPageRoute: (context) => BlocPatternPage()
       },
     );
   }

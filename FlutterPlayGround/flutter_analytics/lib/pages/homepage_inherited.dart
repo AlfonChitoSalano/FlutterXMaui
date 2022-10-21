@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_analytics/pages/update_user_page_inherited.dart';
-import '../infra/custom_widgets/state_container.dart';
+import '../infra/base/state_container.dart';
 
 class HomePageInherited extends StatefulWidget {
   const HomePageInherited({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../infra/custom_widgets/state_container.dart';
+import '../infra/base/state_container.dart';
 
 class UpdateUserPageInherited extends StatelessWidget {
   static final GlobalKey<FormState> _formKey = new GlobalKey<FormState>();
